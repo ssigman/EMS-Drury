@@ -35,7 +35,7 @@ menuState.prototype.getCurPage = function() {
    adds the table to the browse students page. 
     */
 function goBrowseStu() {
-	// adjust the pages that are shown
+    // adjust the pages that are shown
 	if (page.getCurPage() != "browseStu") {
        // post a TO DO message.
 		var stuList = "<div id='browseStuPage' class='panel panel-info'>" +
@@ -50,6 +50,9 @@ function goBrowseStu() {
 	    $(curSelector).css("display","none");
 		page.setCurPage("browseStu");
 	}
+    
+    // Shut the menu if open
+    $(".collapse").collapse('hide');
 }
 /* function to set the home page. */
 function goHome() {
@@ -69,7 +72,8 @@ function goHome() {
 	    $("#homePage").css("display","block");
 		page.setCurPage("home");	
     }
-			  		
+	// Shut the menu if open
+    $(".collapse").collapse('hide');		  		
 }
 
 /* function to build the course management page */
@@ -100,6 +104,8 @@ function goCourseMgt() {
 		page.setCurPage("crseMgmt");	
     }
     // Assert: Course Management Page is Displayed.
+    // Shut the menu if open
+    $(".collapse").collapse('hide');
 }
 
 /* addCourseRows calls a web service to retrieve the rows in the course
@@ -131,6 +137,7 @@ function addCourseRows() {
 
 /* Add course event handler. */
 function addCourse() {
+   $('menu-content').collapse('hide');
    alert("TO TO: 1) Add edit row  to course table.\n2) Unhide save button.\n3) Get data from form.\n4) Validate data.\n5)Post data to database.");
 }
 
@@ -140,5 +147,7 @@ function delCourse() {
 	}
 
 function goFindSchedule() {
+    // Shut the menu if open
+    $(".collapse").collapse('hide');
     alert('To Do: \n\nWrite the schedule system.');
 }
