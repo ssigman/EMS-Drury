@@ -1,0 +1,252 @@
+body {
+	
+}
+
+#jumboHeading h1 {
+  margin-top: 0;	
+}
+
+.themeHeader {
+	background: -webkit-linear-gradient(#660000,#990000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#660000,#990000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#660000,#990000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#660000,#990000);
+    color: #cbc9c5;	
+}
+
+#jumboHeading {
+
+}
+
+#jumboHeading img {
+	float: right;
+}
+
+.panel-info > .panel-heading {
+	background: -webkit-linear-gradient(#660000,#990000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#660000,#990000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#660000,#990000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#660000,#990000);
+    color: #cbc9c5;	
+}
+
+.panel-info {
+	border: 1px solid #660000;
+}
+
+footer {
+	border-radius: 6px;
+}
+
+footer p {
+	padding: 2px 2px 2px 4px;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+background-color: #f0f0f0;
+}
+
+.panel>.table {
+	color: #660000;
+}
+
+#homePage img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 132px;
+	margin-bottom: 132px;
+	opacity: .3;
+	z-index: -2;
+}
+
+/* Will keep height of columns equal, but forces width to resize also */
+.equal, .equal > div[class*='col-'] {  
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.logoTxt {
+	font-size: 6em;
+	opacity: 1;
+	display:block; 
+	position:absolute; left:30%; bottom:35%;
+	z-index:2;
+	-webkit-transform: rotate(-45deg); 
+	-moz-transform: rotate(-45deg);	
+}
+
+#crseCmdBox {
+	float: right;
+}
+
+#crseCmdBox button {
+	background: transparent;
+	border: none;
+}
+
+.crseID {
+	display: none;
+}
+
+.crseDesc {
+	height: 37px;
+	display: block;
+	overflow: hidden;
+}
+
+.crseDescHead {
+   width: 40%;
+}
+
+// Mixin
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.branch-name {
+  display: inline-block;
+  max-width: 200px;
+  .text-overflow();
+}
+
+// Navigation side menu
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: 200;
+  position: fixed;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  color: #cbc9c5;
+}
+
+.nav-side-menu .brand {
+  background: -webkit-linear-gradient(#660000,#990000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#660000,#990000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#660000,#990000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#660000,#990000);
+  color: #cbc9c5;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #181c20;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #23282e;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: #020203;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+  padding-left: 0px;
+  border-left: 3px solid #2e353d;
+  border-bottom: 1px solid #23282e;
+}
+.nav-side-menu li a {
+  text-decoration: none;
+  color: #666666;
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.nav-side-menu li:hover a {
+    color: #cbc9c5;
+}
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
