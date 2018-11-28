@@ -7,5 +7,6 @@ Clone the repo and the code from committ one will run using a browser.  Later co
 ## Credits
 Code and css styles for the responsive vertical menu was adapted from [Bootstrap Sidebar Examples](https://bootsnipp.com/tags/sidebar).
 
-Author: S. Sigman
-November 27, 2018
+**Author:** S. Sigman
+
+**Date:** November 27, 2018
