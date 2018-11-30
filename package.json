@@ -1,0 +1,30 @@
+{
+  "name": "ems-drury",
+  "version": "0.1.2",
+  "description": "EMS-Drury is a simple Enroll Management System that illustrates how to do responsive design for an interface, how to use the Node.js web server, and how to use a MongoDB database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssigman/EMS-Drury.git"
+  },
+  "keywords": [
+    "Node.js",
+    "web",
+    "server",
+    "responsive",
+    "design",
+    "MongoDB"
+  ],
+  "author": "S. Sigman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssigman/EMS-Drury/issues"
+  },
+  "homepage": "https://github.com/ssigman/EMS-Drury#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
