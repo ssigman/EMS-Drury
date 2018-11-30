@@ -1,0 +1,4 @@
+{"_id": 100,"dept": "CSCI", "number": "241", "name": "Discrete Mathematics", "desc": "An amazing math course.", "creditHr": 3}
+{"_id": 200,"dept": "CSCI", "number": "251", "name": "Introduction to Computer Science", "desc": "Introdution to topics in Computer Science via programming.", creditHr: 3}
+{"_id": 300,"dept": "CSCI", "number": "261", "name": "Data Structures", "desc": "A study of ways to struture data.  Programming in Java", creditHr: 4 }
+{"_id": 400,"dept": "CSCI", "number": "262", "name": "Algorithms", "desc": "A study of algorithms and algorithm complexity.", "creditHr": 3}
