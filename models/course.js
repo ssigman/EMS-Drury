@@ -2,6 +2,7 @@
 var db = require("../db");
 
 var Course = db.model("Course", {
+    _id:           Number,
     dept:          String,
     number:        String,
     name:          String,
