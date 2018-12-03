@@ -96,8 +96,12 @@ function goCourseMgt() {
 			$(courses).empty();
 		}
 		
-		// add the rows for the courses
-		addCourseRows();
+		// Add the rows for the courses by making an AJAX call
+        // to the courses api.  Note: Initial interface development
+        // will include retrieving only courses for the CSCI 
+        // department
+        
+        $.get("/api/courses?dept=CSCI", addCourseRows);
 		    
 	    // display the course management
 	    $("#crseMgmtPage").css("display","block");
@@ -113,24 +117,21 @@ function goCourseMgt() {
    rows are returned.
  */
    
-function addCourseRows() {
-	// add some test courses to the page
-	
-    var rows = "";
-    for (var i=0; i < 10; i++) {
-        rows += "<tr>" + 
-                    '<td class="crseID">' + i + "</td>" + 
-                    "<td>" + "CSCI" + "</td>" + 
-                    "<td>" + (100+i) + "</td>" +
-                    "<td>" + "Computer Science-" + i + "</td>" +
-                    '<td><span>' + "This is a fake course" + "</span></td>" +
-                    "<td>" + 3 + "</td>" +
+function addCourseRows(rows) {
+    var rowHTML = "";
+    for (var i=0; i < rows.length; i++) {
+        rowHTML += "<tr>" + 
+                    '<td class="crseID">' + rows[i]._id + "</td>" + 
+                    "<td>" + rows[i].dept + "</td>" + 
+                    "<td>" + rows[i].number + "</td>" +
+                    "<td>" + rows[i].name + "</td>" +
+                    '<td><span>' + rows[i].desc.substring(0,20) + " ..."+ "</span></td>" +
+                    "<td>" + rows[i].creditHr + "</td>" +
         	   "</tr>";
         }
         
         // make an element from the rows
-        var rowsEle = $(rows);
-        
+        var rowsEle = $(rowHTML);
         // put the table
         $("#crseMgmtTable tbody").append(rowsEle);
 }
