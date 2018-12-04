@@ -1,8 +1,10 @@
 // models/course.js
 var db = require("../db");
 
+var ObjectId = db.Schema.Types.ObjectId;
+
 var Course = db.model("Course", {
-    _id:           Number,
+    _id:           ObjectId,
     dept:          String,
     number:        String,
     name:          String,
