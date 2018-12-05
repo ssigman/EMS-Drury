@@ -84,6 +84,7 @@ background-color: #f0f0f0;
 #crseCmdBox button {
 	background: transparent;
 	border: none;
+    color: #cbc9c5;
 }
 
 .crseID {
@@ -100,7 +101,7 @@ background-color: #f0f0f0;
    width: 40%;
 }
 
-// Mixin
+/* Mixin */
 .text-overflow() {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -110,12 +111,26 @@ background-color: #f0f0f0;
 .branch-name {
   display: inline-block;
   max-width: 200px;
-  .text-overflow();
+  text-overflow();
 }
 
-// Navigation side menu
+/* Modal box styles */
+
+.modal-footer button.btn.btn-primary, .modal-header{
+	background: -webkit-linear-gradient(#660000,#990000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#660000,#990000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#660000,#990000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#660000,#990000);
+}
+
+.modal-header h4.modal-title, .modal-header button span {
+    color: #cbc9c5;
+}
+
+ /* Navigation side menu */
+
 .nav-side-menu {
-  overflow: auto;
+ /* overflow: auto;
   font-family: verdana;
   font-size: 12px;
   font-weight: 200;
@@ -123,8 +138,8 @@ background-color: #f0f0f0;
   top: 0px;
   width: 300px;
   height: 100%;
-  color: #cbc9c5;
-}
+  color: #cbc9c5; */
+} 
 
 .nav-side-menu .brand {
   background: -webkit-linear-gradient(#660000,#990000); /* For Safari 5.1 to 6.0 */

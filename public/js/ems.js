@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('#home').on("click",goHome);
 	$('#crseMgmt').on("click",goCourseMgt);
     $('#fndSch').on("click", goFindSchedule);
-	$('#mainContentPane #crseAddButton').on('click',addCourse);
+	//$('#mainContentPane #crseAddButton').on('click',addCourse);
 	$('#mainContentPane #crseDelButton').on('click',delCourse);
 	
 	// The initial Page is the current and last page
@@ -52,7 +52,9 @@ function goBrowseStu() {
 	}
     
     // Shut the menu if open
-    $(".collapse").collapse('hide');
+    if($(window).width() < 768) {
+        $(".collapse").collapse('hide');
+    }
 }
 /* function to set the home page. */
 function goHome() {
@@ -73,7 +75,9 @@ function goHome() {
 		page.setCurPage("home");	
     }
 	// Shut the menu if open
-    $(".collapse").collapse('hide');		  		
+    if($(window).width() < 768) {
+        $(".collapse").collapse('hide');
+    }		  		
 }
 
 /* function to build the course management page */
@@ -109,7 +113,9 @@ function goCourseMgt() {
     }
     // Assert: Course Management Page is Displayed.
     // Shut the menu if open
-    $(".collapse").collapse('hide');
+    if($(window).width() < 768) {
+        $(".collapse").collapse('hide');
+    }
 }
 
 /* addCourseRows calls a web service to retrieve the rows in the course
@@ -149,6 +155,8 @@ function delCourse() {
 
 function goFindSchedule() {
     // Shut the menu if open
-    $(".collapse").collapse('hide');
+    if($(window).width() < 768) {
+        $(".collapse").collapse('hide');
+    }
     alert('To Do: \n\nWrite the schedule system.');
 }
