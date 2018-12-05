@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('#home').on("click",goHome);
 	$('#crseMgmt').on("click",goCourseMgt);
     $('#fndSch').on("click", goFindSchedule);
-	//$('#mainContentPane #crseAddButton').on('click',addCourse);
+    $('#saveCourse').on("click", addCourse);
 	$('#mainContentPane #crseDelButton').on('click',delCourse);
 	
 	// The initial Page is the current and last page
@@ -142,10 +142,9 @@ function addCourseRows(rows) {
         $("#crseMgmtTable tbody").append(rowsEle);
 }
 
-/* Add course event handler. */
+/* Event handler to handle saving a course */
 function addCourse() {
-   $('menu-content').collapse('hide');
-   alert("TO TO: 1) Add edit row  to course table.\n2) Unhide save button.\n3) Get data from form.\n4) Validate data.\n5)Post data to database.");
+    alert("TO DO: Save the course information from the addCourse modal.")
 }
 
 /* Delete course event handler. */
